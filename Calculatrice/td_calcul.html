@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="td_calcul.css" />
+    <title>Calculatrice</title>
+    <script src="./td_calcul.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header>
+      <a class="back-btn" href="../index.html"><i class="far fa-hand-point-left fa-3x"></i></a> 
+
+    </header>
+    <div class="container">
+      <table>
+        <tr>
+          <input
+            type="text"
+            name="affichage"
+            id="affichage"
+            class="aff"
+            value="OFF"
+            disabled
+          />
+        </tr>
+        <tr>
+          <td><input type="button" name="bma" value="M" onclick="bma()" /></td>
+          <td>
+            <input
+              type="button"
+              name="bclear"
+              value="C"
+              id="bclear"
+              onclick="bclear()"
+            />
+          </td>
+          <td>
+            <input type="button" name="bdel" value="S" onclick="bdel()" />
+          </td>
+          <td><input type="button" name="div" value="/" onclick="aff('/')" /></td>
+        </tr>
+        <tr>
+          <td><input type="button" name="b7" value="7" onclick="aff('7')" /></td>
+          <td><input type="button" name="b8" value="8" onclick="aff('8')" /></td>
+          <td><input type="button" name="b9" value="9" onclick="aff('9')" /></td>
+          <td>
+            <input type="button" name="bfois" value="*" onclick="aff('*')" />
+          </td>
+        </tr>
+        <tr>
+          <td><input type="button" name="b4" value="4" onclick="aff('4')" /></td>
+          <td><input type="button" name="b5" value="5" onclick="aff('5')" /></td>
+          <td><input type="button" name="b6" value="6" onclick="aff('6')" /></td>
+          <td>
+            <input type="button" name="bmoins" value="-" onclick="aff('-')" />
+          </td>
+        </tr>
+        <tr>
+          <td><input type="button" name="b1" value="1" onclick="aff('1')" /></td>
+          <td><input type="button" name="2" value="2" onclick="aff('2')" /></td>
+          <td><input type="button" name="b3" value="3" onclick="aff('3')" /></td>
+          <td>
+            <input type="button" name="bplus" value="+" onclick="aff('+')" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" name="bpm" value="+/-" onclick="aff('+-')" />
+          </td>
+          <td><input type="button" name="0" value="0" onclick="aff('0')" /></td>
+          <td>
+            <input type="button" name="bvir" value="," onclick="aff('.')" />
+          </td>
+          <td>
+            <input type="button" name="begal" value="=" onclick="solve()" />
+          </td>
+        </tr>
+      </table>
+    </div>
+    
+  </body>
+</html>

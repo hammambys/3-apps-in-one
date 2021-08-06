@@ -1,0 +1,27 @@
+header{
+	text-align: left;
+}
+body {
+	text-align: center;
+	background-color: #B1D4E0;
+}
+
+
+table {
+	border: 1px;
+	margin: auto;
+}
+
+input {
+	margin: 10px;
+	width: 100px;
+	height: 70px;
+	font-size: 3em;
+}
+td input:hover{
+	background-color: #2E8BC0;
+}
+
+#affichage {
+	width: 400px;	
+}
